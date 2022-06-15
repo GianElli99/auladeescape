@@ -1,6 +1,6 @@
-import { Question } from '@/components/Question'
-import logoFull from '@/favicon.svg'
-import questions from '@/data/questions'
+import { Question } from '../components/Question'
+import logoFull from '../favicon.svg'
+import questions from '../data/questions'
 import { useState } from 'react'
 
 export const Quiz = () => {
@@ -29,7 +29,6 @@ export const Quiz = () => {
         <div>Won</div>
       ) : (
         <Question
-          key={step}
           questionData={questions[step]}
           onCorrectAnswer={handleNextStep}
         />

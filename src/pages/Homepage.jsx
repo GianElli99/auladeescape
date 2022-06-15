@@ -1,4 +1,4 @@
-import logoFull from '@/assets/logo-full.svg'
+import logoFull from '../assets/logo-full.svg'
 
 export const Homepage = ({ onStart }) => {
   return (
