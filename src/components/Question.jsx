@@ -10,12 +10,8 @@ export const Question = ({ questionData, onCorrectAnswer }) => {
     }
   }
   useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.value = ''
-    }
-
     inputRef.current?.focus()
-  }, [questionData])
+  }, [])
 
   return (
     <form action="" onSubmit={handleSubmit} className="w-full max-w-md mx-auto">

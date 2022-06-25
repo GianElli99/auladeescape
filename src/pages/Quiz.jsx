@@ -16,7 +16,7 @@ export const Quiz = () => {
   }
   return (
     <>
-      <header className="my-6">
+      <header className="py-6">
         <img
           src={logoFull}
           alt="Aula de escape logo"
@@ -29,6 +29,7 @@ export const Quiz = () => {
         <div>Won</div>
       ) : (
         <Question
+          key={step}
           questionData={questions[step]}
           onCorrectAnswer={handleNextStep}
         />
