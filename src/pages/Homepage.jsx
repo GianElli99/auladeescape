@@ -12,7 +12,7 @@ export const Homepage = ({ onStart }) => {
           className="mx-auto block h-80"
         />
       </header>
-      <main className="flex flex-col items-center gap-4 font-lato text-xl text-center">
+      <main className="flex flex-col items-center gap-4 text-xl text-center">
         <p>¡Hey! ¿Estas seguro que podrás salir?</p>
         <button
           onClick={() => onStart(true)}

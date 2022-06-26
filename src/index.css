@@ -7,11 +7,11 @@
   src: url('./assets/fonts/Lato-Regular.ttf');
   font-style: normal;
   font-weight: 400;
-  font-display: block;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   src: url('./assets/fonts/Lato-Bold.ttf');
   font-weight: 700;
-  font-display: block;
+  font-display: swap;
 }
