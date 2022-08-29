@@ -2,6 +2,8 @@ import { Question } from '../components/Question'
 import logoFull from '../favicon.svg'
 import questions from '../data/questions'
 import { useState } from 'react'
+import { Won } from '../components/Won'
+import { Stopwatch } from '../components/Stopwatch'
 
 export const Quiz = () => {
   const [step, setStep] = useState(0)
@@ -25,8 +27,9 @@ export const Quiz = () => {
           className="mx-auto block h-40"
         />
       </header>
+      <Stopwatch shouldStop={hasWon} />
       {hasWon ? (
-        <div>Won</div>
+        <Won />
       ) : (
         <Question
           key={step}

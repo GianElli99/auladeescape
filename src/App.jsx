@@ -4,7 +4,7 @@ import { Quiz } from './pages/Quiz'
 
 function App() {
   const [playing, setPlaying] = useState(false)
-  return <div>{playing ? <Quiz /> : <Homepage onStart={setPlaying} />}</div>
+  return <main>{playing ? <Quiz /> : <Homepage onStart={setPlaying} />}</main>
 }
 
 export default App

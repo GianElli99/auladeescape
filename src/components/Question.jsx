@@ -1,9 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 
 export const Question = ({ questionData, onCorrectAnswer }) => {
-  const { id, question, answer } = questionData
+  const { question, answer } = questionData
   const [wrongAnswer, setWrongAnswer] = useState(false)
   const inputRef = useRef(null)
+
   const handleSubmit = (e) => {
     e.preventDefault()
     if (answer === inputRef.current?.value) {
@@ -12,9 +13,9 @@ export const Question = ({ questionData, onCorrectAnswer }) => {
       setWrongAnswer(true)
     }
   }
-  useEffect(() => {
-    inputRef.current?.focus()
-  }, [])
+  // useEffect(() => {
+  //   inputRef.current?.focus()
+  // }, [])
 
   return (
     <form
@@ -24,7 +25,7 @@ export const Question = ({ questionData, onCorrectAnswer }) => {
     >
       <label
         htmlFor="question"
-        className="block mb-2 text-sm font-medium text-gray-900"
+        className="block mb-2 text-sm font-medium text-gray-900 whitespace-pre-wrap"
       >
         {question}
       </label>
