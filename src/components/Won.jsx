@@ -58,18 +58,25 @@ export const Won = () => {
     fire()
   }, [])
 
+  const onGoBackClick = () => {
+    window.localStorage.removeItem('currentStep')
+    window.localStorage.removeItem('startedAt')
+    window.localStorage.removeItem('finishedAt')
+    window.location.href = './'
+  }
+
   return (
     <div className="pt-3 w-full max-w-md mx-auto px-2 mb-1">
       <h1 className="text-center text-xl">
         🎉 ¡Felicitaciones! Lograron salir del Aula de Escape 🎉
       </h1>
       <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} />
-      <a
-        href="./"
-        className="mt-10 text-sm block underline underline-offset-2 text-martinique-600 text-right"
+      <button
+        onClick={onGoBackClick}
+        className="mt-10 text-sm underline underline-offset-2 text-martinique-600 text-right"
       >
         Volver al inicio
-      </a>
+      </button>
     </div>
   )
 }

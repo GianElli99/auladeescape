@@ -5,12 +5,16 @@ import { useState } from 'react'
 import { Won } from '../components/Won'
 import { Stopwatch } from '../components/Stopwatch'
 
-export const Quiz = () => {
-  const [step, setStep] = useState(0)
+export const Quiz = ({ resumeGameOptions }) => {
+  const [step, setStep] = useState(resumeGameOptions?.currentStep || 0)
   const hasWon = step === questions.length
 
   const handleNextStep = () => {
     const nextStepIndex = step + 1
+    window.localStorage.setItem('currentStep', nextStepIndex)
+    if (nextStepIndex === questions.length) {
+      window.localStorage.setItem('finishedAt', new Date().getTime())
+    }
     if (nextStepIndex > questions.length) {
       return
     }
@@ -27,7 +31,11 @@ export const Quiz = () => {
           className="mx-auto block h-40"
         />
       </header>
-      <Stopwatch shouldStop={hasWon} />
+      <Stopwatch
+        startedAt={resumeGameOptions?.startedAt}
+        finishedAt={resumeGameOptions?.finishedAt}
+        shouldStop={hasWon}
+      />
       {hasWon ? (
         <Won />
       ) : (
