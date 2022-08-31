@@ -35,5 +35,7 @@ export const Stopwatch = ({ shouldStop }) => {
     }
   }, [stopped])
 
-  return <h2 className="text-center">{timeElapsed}</h2>
+  return (
+    <h2 className="text-center text-martinique-800 text-xl">{timeElapsed}</h2>
+  )
 }
