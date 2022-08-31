@@ -59,9 +59,17 @@ export const Won = () => {
   }, [])
 
   return (
-    <div className="text-center text-xl pt-3">
-      <h1>🎉 ¡Felicitaciones! Lograron salir del Aula de Escape 🎉</h1>
+    <div className="pt-3 w-full max-w-md mx-auto px-2 mb-1">
+      <h1 className="text-center text-xl">
+        🎉 ¡Felicitaciones! Lograron salir del Aula de Escape 🎉
+      </h1>
       <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} />
+      <a
+        href="./"
+        className="mt-10 text-sm block underline underline-offset-2 text-martinique-600 text-right"
+      >
+        Volver al inicio
+      </a>
     </div>
   )
 }
