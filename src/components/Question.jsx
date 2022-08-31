@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 
 export const Question = ({ questionData, onCorrectAnswer }) => {
-  const { question, answer } = questionData
+  const { question, answer, periodicTableWords } = questionData
   const [wrongAnswer, setWrongAnswer] = useState(false)
   const inputRef = useRef(null)
 
@@ -29,6 +29,21 @@ export const Question = ({ questionData, onCorrectAnswer }) => {
       >
         {question}
       </label>
+      {periodicTableWords
+        ? periodicTableWords.map((word, wordIdx) => (
+            <div key={wordIdx} className="flex gap-2 mb-2">
+              {word?.map((letter, letterIdx) => (
+                <div
+                  key={letterIdx}
+                  style={{ backgroundColor: letter.color || 'grey' }}
+                  className="w-12 h-12 border border-black flex items-center justify-center text-lg font-bold"
+                >
+                  {letter.symbol}
+                </div>
+              ))}
+            </div>
+          ))
+        : null}
       <input
         ref={inputRef}
         type="number"

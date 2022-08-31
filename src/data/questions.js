@@ -36,8 +36,94 @@ const questions = [
   {
     id: 6,
     question:
-      'La tabla periódica de los elementos es una disposición de los elementos químicos en forma de tabla, publicada por primera vez en 1869 por Dmitri Mendeléyev. Los elementos están ordenados por su número atómico (número de protones), ubicado en el extremo superior izquierdo de cada casilla. Cada elemento tiene un símbolo químico utilizando las letras del alfabeto. Hay 13 símbolos químicos que son de una sola letra: H, B, C, N, O, F, P, S, K, V, I, Y, W, U. El resto de símbolos (105 por hoy) tienen dos letras. Hay una analogía entre el alfabeto y el lenguaje químico. Muchas personas se distraen resolviendo sopas de letras con los símbolos de la tabla periódica, o escribiendo palabras y frases con ellos. Éste es nuestro desafío para ustedes',
+      'La tabla periódica de los elementos es una disposición de los elementos químicos en forma de tabla, publicada por primera vez en 1869 por Dmitri Mendeléyev. Los elementos están ordenados por su número atómico (número de protones), ubicado en el extremo superior izquierdo de cada casilla. Cada elemento tiene un símbolo químico utilizando las letras del alfabeto. Hay 13 símbolos químicos que son de una sola letra: H, B, C, N, O, F, P, S, K, V, I, Y, W, U. El resto de símbolos (105 por hoy) tienen dos letras. Hay una analogía entre el alfabeto y el lenguaje químico. Muchas personas se distraen resolviendo sopas de letras con los símbolos de la tabla periódica, o escribiendo palabras y frases con ellos. Éste es nuestro desafío para ustedes:',
     answer: '615',
+    periodicTableWords: [
+      [
+        {
+          symbol: 'P',
+          color: 'gray',
+        },
+        {
+          symbol: 'Ar',
+          color: 'blue',
+        },
+        {
+          symbol: 'As',
+          color: 'lightgreen',
+        },
+        {
+          symbol: 'Al',
+          color: 'green',
+        },
+        {
+          symbol: 'Ir',
+          color: 'purple',
+        },
+      ],
+      [
+        {
+          symbol: 'Ne',
+          color: 'blue',
+        },
+        {
+          symbol: 'Ce',
+          color: 'red',
+        },
+        {
+          symbol: 'Si',
+          color: 'lightgreen',
+        },
+        {
+          symbol: 'Ta',
+          color: 'purple',
+        },
+        {
+          symbol: 'N',
+          color: 'gray',
+        },
+      ],
+      [
+        {
+          symbol: 'S',
+          color: 'gray',
+        },
+        {
+          symbol: 'Er',
+          color: 'red',
+        },
+      ],
+      [
+        {
+          symbol: 'P',
+          color: 'gray',
+        },
+        {
+          symbol: 'O',
+          color: 'gray',
+        },
+        {
+          symbol: 'S',
+          color: 'gray',
+        },
+        {
+          symbol: 'I',
+          color: 'lightblue',
+        },
+        {
+          symbol: 'Ti',
+          color: 'purple',
+        },
+        {
+          symbol: 'V',
+          color: 'purple',
+        },
+        {
+          symbol: 'Os',
+          color: 'purple',
+        },
+      ],
+    ],
   },
   {
     id: 7,
