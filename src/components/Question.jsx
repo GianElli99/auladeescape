@@ -31,7 +31,7 @@ export const Question = ({ questionData, onCorrectAnswer }) => {
       </label>
       {periodicTableWords
         ? periodicTableWords.map((word, wordIdx) => (
-            <div key={wordIdx} className="flex gap-2 mb-2">
+            <div key={wordIdx} className="flex gap-2 mb-2" translate="no">
               {word?.map((letter, letterIdx) => (
                 <div
                   key={letterIdx}
