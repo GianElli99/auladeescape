@@ -2,7 +2,7 @@ const questions = [
   {
     id: 1,
     question:
-      'Se presentan diferentes plantillas en las que se observan disposiciones de cuadrados unidos por algunos de sus lados. Sólo con algunas de esas plantillas podrán formarse cubos, sin cambiar de lugar las bisagras con las que están unidas, pues si no se modificaría la disposición original. Manipulando las poliformas deberán descubrir con cuántas de estas plantillas efectivamente pueden formarse cubos e indicar la cantidad correcta en el visor.',
+      'Se presentan diferentes plantillas en las que se observan disposiciones de cuadrados unidos por algunos de sus lados. Sólo con algunas de esas plantillas podrán formarse cubos, sin cambiar de lugar las bisagras con las que están unidas, pues de lo contrario se modificaría la disposición original. Manipulando las poliformas deberán descubrir con cuántas de estas plantillas efectivamente pueden formarse cubos e indicar la cantidad correcta en el visor.',
     answer: '4',
   },
   {
@@ -13,8 +13,8 @@ const questions = [
   },
   {
     id: 3,
-    question:
-      'Dos compañeros deberán distanciarse exactamente a 2,4 metros de distancia, sosteniendo tensa la soga al ras del piso. Otro compañero hará una marca allí mismo con una tiza en el punto medio de esa distancia. Luego medirán 20 centímetros más de soga, y se lo anexarán al resto ya utilizado. Todavía en el piso y sostenida desde sus extremos, la soga se elevará desde el punto medio. Indicar cuántos centímetros se puede elevar. La prueba será empírica, pero en caso de ser necesario, podrán hacer cálculos (hay fórmulas útiles en el aula). El número a ingresar es redondo.',
+    question: `Dos compañeros distanciados exactamente a 2,4 metros deberán sostener una soga de 260 cm al ras del piso. Otro compañero se situará en el punto medio de tal distancia y con su dedo elevará la soga verticalmente, sin dejar de sostenerse tensa desde sus extremos.
+Indicar cuántos centímetros se puede elevar. La prueba será empírica, pero en caso de ser necesario, podrán hacer cálculos (hay fórmulas útiles en el aula). El número a ingresar es redondo.`,
     answer: '50',
   },
   {
@@ -30,7 +30,7 @@ const questions = [
     ⦁	el último número de teléfono de la ciudad de Armstrong.
     ⦁	el número de teléfono de la farmacia de la localidad de Los Quirquinchos.
     ⦁	el único número de teléfono del pueblo de Las Bandurrias.
-    Sumar los 4 números hallados (todos sin prefijo). Tomando sólo 3 de sus dígitos (del 0 al 9, sin repetir) formar el mayor número impar posible. `,
+Sumar los 4 números hallados (todos sin prefijo). Tomando sólo 3 de sus dígitos (del 0 al 9, sin repetir) formar el mayor número impar posible. `,
     answer: '861',
   },
   {
