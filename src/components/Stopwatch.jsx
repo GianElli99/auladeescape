@@ -25,6 +25,7 @@ export const Stopwatch = ({ shouldStop, startedAt, finishedAt }) => {
       clearInterval(stopwatchId)
     }
   }, [stopped, startedAt])
+
   const formatTimeElapsed = (timeElapsed) => {
     const seconds = Math.floor((timeElapsed / 1000) % 60)
     const minutes = Math.floor((timeElapsed / 1000 / 60) % 60)
