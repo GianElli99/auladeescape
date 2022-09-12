@@ -3,7 +3,6 @@ import { Homepage } from './pages/Homepage'
 import { Quiz } from './pages/Quiz'
 
 function App({ resumeGameOptions }) {
-  console.log(resumeGameOptions)
   const [playing, setPlaying] = useState(resumeGameOptions ? true : false)
   return (
     <main>
